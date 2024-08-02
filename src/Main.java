@@ -9,8 +9,6 @@ public class Main {
         Street street3 = new Street(9, 6, 1);
         Street street4 = new Street(7, 5, 2);
 
-        Street[] charrah = {street1, street2, street3, street4};
-
         Intersection charRah = new Intersection(street1, street2, street3, street4);
 
 
@@ -22,7 +20,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             driverSide = scanner.nextInt();
             int currentGreen = charRah.algorithm();
-            
+
 
             if (currentGreen == driverSide)
                 System.out.println("Yes!");
