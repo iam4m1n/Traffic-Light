@@ -40,7 +40,7 @@ public class Intersection {
 
         }
         lightes.get(idx).set_green();
-        carsCount[idx] = 9999;
+        carsCount[idx] = 0;
         return idx;
     }
 

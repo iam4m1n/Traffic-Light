@@ -26,9 +26,6 @@ public class TrafficLight {
 
 
 
-    public boolean start(int[] carsCount){
-        return false;
-    }
 
 
 

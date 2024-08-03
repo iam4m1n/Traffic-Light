@@ -3,22 +3,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < 16; j++) {
-                if(j==6 || j==11)
-                    System.out.print("|");
-                else
-                    System.out.print(" ");
-            }
-            System.out.println();
-
-            if(i==5){
-                System.out.println("      light");
-            }
-
-
-        }
+//
+//        for (int i = 0; i < 6; i++) {
+//            for (int j = 0; j < 16; j++) {
+//                if(j==6 || j==11)
+//                    System.out.print("|");
+//                else
+//                    System.out.print(" ");
+//            }
+//            System.out.println();
+//
+//            if(i==5){
+//                System.out.println("      light");
+//            }
+//
+//
+//        }
 
 
 
@@ -48,4 +48,9 @@ public class Main {
 
         }
     }
+
+    
+
+
+
 }
