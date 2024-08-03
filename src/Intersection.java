@@ -31,10 +31,10 @@ public class Intersection {
 
     public int algorithm(){
         int idx = 0;
-        int min = carsCount[0];
+        int max = carsCount[0];
         for (int i = 0; i < 4; i++) {
-            if(min > carsCount[i]) {
-                min = carsCount[i];
+            if(max < carsCount[i]) {
+                max = carsCount[i];
                 idx = i;
             }
 
