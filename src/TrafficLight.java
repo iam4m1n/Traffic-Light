@@ -1,39 +1,29 @@
 public class TrafficLight {
-    public boolean isGreen = false;
-    public boolean isRed = false;
-    public boolean isBlinking = false;
 
 
-    public void set_red(){
-        this.isGreen = false;
-        this.isBlinking = false;
-        this.isRed = true;
+    private TrafficLightColor color;
+
+    public void changeColor(TrafficLightColor newColor){
+        this.color = newColor;
     }
-
-    public void set_green(){
-        this.isGreen = true;
-        this.isBlinking = false;
-        this.isRed = false;
-    }
-
-    public void set_blinking(){
-        this.isGreen = false;
-        this.isBlinking = true;
-        this.isRed = false;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
+
+    enum TrafficLightColor{
+        Green,
+        Red,
+        Yellow;
+    }
+
+
+
+
+
+
+
+
+
+
+
+

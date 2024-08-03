@@ -39,7 +39,14 @@ public class Intersection {
             }
 
         }
-        lightes.get(idx).set_green();
+
+        for (int i = 0; i < 4; i++) {
+            if (i == idx)
+                lightes.get(idx).changeColor(TrafficLightColor.Green);
+            else
+                lightes.get(i).changeColor(TrafficLightColor.Red);
+
+        }
         carsCount[idx] = 0;
         return idx;
     }

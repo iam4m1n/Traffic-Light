@@ -3,23 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-//
-//        for (int i = 0; i < 6; i++) {
-//            for (int j = 0; j < 16; j++) {
-//                if(j==6 || j==11)
-//                    System.out.print("|");
-//                else
-//                    System.out.print(" ");
-//            }
-//            System.out.println();
-//
-//            if(i==5){
-//                System.out.println("      light");
-//            }
-//
-//
-//        }
-
 
 
         Street street1 = new Street(2, 3, 5);
@@ -40,8 +23,10 @@ public class Main {
             int currentGreen = charRah.algorithm();
 
 
-            if (currentGreen == driverSide)
+            if (currentGreen+1 == driverSide) {
                 System.out.println("Yes!");
+                break;
+            }
             else
                 System.out.println("No!");
 
@@ -49,7 +34,7 @@ public class Main {
         }
     }
 
-    
+
 
 
 
